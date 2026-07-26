@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="container">
+    <form id="productForm">
+    <div class="row py-4 gy-2">
+
+        <div class="col-12 col-sm-6">
+            <input type="text" class="form-control" placeholder="name" aria-label="name" id="name">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="text" class="form-control" placeholder="brand" aria-label="brand" id="brand">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="number" class="form-control" placeholder="price" aria-label="price" id="price">
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="text" class="form-control" placeholder="imageUrl" aria-label="imageUrl" id="imageUrl">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="description" aria-label="description" id="description">
+        </div>
+       <div class="col-12">
+        <button type="submit" class="btn btn-primary" id="btn">Salva</button>
+    </div>
+
+
+    </div>
+    </form>
+        <table class="table text-center align-middle">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Brand</th>
+                <th>Prezzo</th>
+                <th>Immagine</th>
+                <th>Descrizione</th>
+                <th>Azioni</th>
+            </tr>
+            </thead>
+            <tbody id="productRow">
+
+            </tbody>
+        </table>
+    </div>
+
+<div class="modal fade" id="editModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form id="editForm">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Modifica prodotto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="editName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="editName">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editBrand" class="form-label">Brand</label>
+                        <input type="text" class="form-control" id="editBrand">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPrice" class="form-label">Prezzo</label>
+                        <input type="number" class="form-control" id="editPrice">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editImageUrl" class="form-label">URL immagine</label>
+                        <input type="text" class="form-control" id="editImageUrl">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editDescription" class="form-label">Descrizione</label>
+                        <input type="text" class="form-control" id="editDescription">
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Annulla
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        Salva modifiche
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./backoffice.js"></script>
+
+
+</body>
+</html>

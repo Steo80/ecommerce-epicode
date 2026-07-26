@@ -1,0 +1,21 @@
+body {
+    background-color: #15191a;
+    background-image:
+            linear-gradient(rgba(21, 25, 26, 0.72), rgba(21, 25, 26, 0.72)),
+            url("./assets/ecommerce-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.index-page {
+    padding-top: 70px;
+}

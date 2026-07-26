@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="index-page">
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">
+            <i class="bi bi-shop"></i>
+            My Ecommerce
+        </a>
+        <div class="d-flex align-items-center">
+            <a href="./backoffice.html" class="btn btn-outline-light">
+                Back office
+            </a>
+            <div class="position-relative ms-3">
+
+                <a href="./cart.html" class="text-white text-decoration-none">
+                    <i class="bi bi-cart3"></i>
+                    <span id="cartCount">0</span>
+                </a>
+
+                <div id="cartMessage" class="d-none bg-success text-white rounded p-2"
+                     style="position: absolute; top: 35px; right: 0; width: 230px; z-index: 1000;"></div>
+
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<main class="container py-5">
+
+    <h1 class="mb-4">I nostri prodotti</h1>
+
+    <div class="row mb-4">
+        <div class="col-12 col-md-6">
+            <input
+                    type="text"
+                    class="form-control"
+                    id="searchInput"
+                    placeholder="Cerca un prodotto o un brand..."
+            >
+        </div>
+    </div>
+
+    <div class="row g-4" id="productContainer"></div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

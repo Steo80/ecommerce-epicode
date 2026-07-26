@@ -71,7 +71,7 @@ const createProductCard = (product) => {
                 src="${product.imageUrl}"
                 class="card-img-top"
                 alt="${product.name}"
-                style="height: 220px; object-fit: cover;">
+                style="height: 220px; object-fit: contain;">
 
             <div class="card-body d-flex flex-column">
 

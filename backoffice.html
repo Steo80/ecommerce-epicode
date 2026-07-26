@@ -10,6 +10,14 @@
 
 <body>
 <div class="container">
+    <div class="row py-4">
+        <div class="col-12">
+            <a href="./index.html" class="btn btn-success mb-3" target="_blank">
+                <i class="bi bi-eye"></i>
+                Visualizza store
+            </a>
+        </div>
+    </div>
     <form id="productForm">
     <div class="row py-4 gy-2">
 
@@ -20,7 +28,7 @@
             <input type="text" class="form-control" placeholder="brand" aria-label="brand" id="brand">
         </div>
         <div class="col-12 col-sm-6">
-            <input type="number" class="form-control" placeholder="price" aria-label="price" id="price">
+            <input type="number" class="form-control" placeholder="price" aria-label="price" id="price" step="0.01" min="0">
         </div>
         <div class="col-12 col-sm-6">
             <input type="text" class="form-control" placeholder="imageUrl" aria-label="imageUrl" id="imageUrl">
@@ -77,7 +85,7 @@
 
                     <div class="mb-3">
                         <label for="editPrice" class="form-label">Prezzo</label>
-                        <input type="number" class="form-control" id="editPrice">
+                        <input type="number" class="form-control" id="editPrice" step="0.01" min="0">
                     </div>
 
                     <div class="mb-3">
